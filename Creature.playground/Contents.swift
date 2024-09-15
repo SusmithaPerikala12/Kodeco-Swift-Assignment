@@ -40,3 +40,16 @@ func fibonacciAbility(n: Int) -> Int{
     return fibonacciAbility(n: n-1) + fibonacciAbility(n: n-2)
     
 }
+// Array of Creature Instances
+
+var creatureCatalog:[Creature] = [creature1, creature2, creature3]
+
+func describeCreature(_ creatureCatalog: [Creature]){
+    
+    for creature in 0...2{
+        print(creatureCatalog[creature].description + " and " + creatureCatalog[creature].ability)
+        
+    }
+}
+// Function Call to describeCreature 
+describeCreature(creatureCatalog)
